@@ -702,7 +702,7 @@
   <div class="col-sm-4">
     <div class="well" style="height: 750px;width: 100%;border: 1px solid blue;">
       {{-- <h2 style="background-color:#533F58">Important Link</h2> --}}
-      <h2 class="noticeboard" id="routine-read" style="background-image:url('{{asset('frontend/image/Notice.png')}}');background-repeat:no-repeat;background-size:auto;background-position: center;">Important Links</h2>
+      <h2 class="noticeboard" id="routine-read" style="background-image:url('{{asset('frontend/image/News.png')}}');background-repeat:no-repeat;background-repeat: no-repeat; background-size: 145%; background-position: center; background-clip: border-box;;">Important Links</h2>
       <div class="container col-md-10">
         <div class="row col-md-12">
           <div class="col-md-3"> 

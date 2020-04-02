@@ -1,6 +1,6 @@
 	   <footer class="footer mt-4">
 
-    	<div style="background-image:url('{{asset('frontend/image/footer.png')}}');background-repeat:no-repeat;background-size:cover;">
+    	<div style="background-image:url('{{asset('frontend/image/footer.png')}}');background-repeat:no-repeat;background-size:cover;background-position:center">
     		<div class="row text-center">
     			<h3></h3>
     			<div class="col-md-3 map"  style="position: relative; top: 10px; left: 5%;">

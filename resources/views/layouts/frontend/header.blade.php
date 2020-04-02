@@ -184,18 +184,17 @@
           <!--<iframe height="300px" width="100%" src="demo_iframe.htm" name="iframe_a"></iframe>-
 
           <a herf="#down" style="border-top:450px; width:80%; height: 700px;"></a>-->
-          <a id="down" class="dropdown-item" href="new_requrement.html" herf= "#" >Introducing Eti</a>
-
-          <a class="dropdown-item" href="#">Mission Vision</a>
-          <a class="dropdown-item" href="#">Statistics Of training</a>
-          <a class="dropdown-item" href="#"> Former Director/DG</a>
-          <a class="dropdown-item" href="#">General Facilities </a>
+          <a id="down" class="dropdown-item" herf="{{url('/intro')}}" >Introducing Eti</a>
+          <a class="dropdown-item" href="{{url('/mission')}}">Mission Vision</a>
+          <a class="dropdown-item" href="{{url('/Stat_training')}}">Statistics Of training</a>
+          <a class="dropdown-item" href="{{url('/Ex_dg')}}"> Former Director/DG</a>
+          <a class="dropdown-item" href="{{url('/facilities')}}">General Facilities </a>
         </div>
 
       </li>
       <li class="verticle_line"></li>
       <li class="nav-item feculti_member">
-        <a class="nav-link" href="#"  style="font-size:17px; color:white;font-weight:bold">Feculty Memeber</a>
+        <a class="nav-link" href="{{url('/faculties')}}"  style="font-size:17px; color:white;font-weight:bold">Feculty Memeber</a>
       </li>
       <li class="verticle_line"></li>
       <li class="nav-item dropdown training">

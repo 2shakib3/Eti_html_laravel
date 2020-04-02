@@ -158,6 +158,16 @@
   </form>
 </div>
 
+
+<h2><b>Statics of Training</b></h2>
+<div style="height:60px; width:100%; background-color: #68b2ff; margin-top:20px; margin-bottom:20px;" > 
+	<form style=" text-align:right;">
+		<label for="gsearch"><b>Search</b> </label>
+		<input  style="font-size:25px; border-radius: 8px; margin-top:10px; margin-right:5px; border: 1px solid #4CAF50; background-color: #68b2ff; width:280px;" type="search" id="gsearch" name="gsearch">
+
+  </form>
+</div>
+
 <h2>Previous Training</h2>
 
 <div style="margin:0px; padding:0px;">
@@ -205,21 +215,101 @@
 
 <div style="height:40px; width:100%; color: white; text-align: center; margin-bottom: 50px; margin-top:20px; font-size:20px; background: linear-gradient(270deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);"> <b>Capacity Building Training <b> </div>
 
-<div class="container">
 
-	<div class="rectangle"> 
 
-		<h2 style="text-align:center; color: white;">Course Name<br/></h2> 
-		<p style="text-align:justify; color:white; padding-left: 5%; padding-right:5%;"> industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	</div>
+<div style="margin-bottom:20%">
+	<div style="height:40px; width:100%; color: white; text-align: center; margin-bottom: 50px; margin-top:20px; font-size:20px; background: linear-gradient(270deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);"> 
+		<div class="row">
+			<div class="col-md-4">
+				DATE
+			</div>
+			<div class="col-md-4">
+				palce
+			</div> 
+			<div class="col-md-4">
+				Location
+			</div>
 
-  <div class="item"><b>1</b></div>
+	 </div> 
+	
+	 <div style="height:400px; width:100%; background-color: #d6ebfb; margin:0px;">
 
+		  <div class="row">
+			<div class="col-md-4" style="padding:0px;">
+				<div class="row">
+
+					<div class="col-md-1" style="  margin-left:30px; margin-top:40px; height: 40px; width: 60px;background-color:  #417aa7; border-radius: 50%; margin-right:7px;"><p style="color: white; text-align:center; font-size:22px;"><b>1</b></p> </div> 
+
+					<div class="col-md-7" style=" margin-top:30px; height: 50px; width: 100%;background-color: white;" > <p style="color:#417aa7; padding-top:10px;">1996 ,December 2019 </p></div>
+
+					<div class="col-md-3" style=" margin-top:20px;width: 0; height: 0; border-top: 30px solid transparent; border-left: 50px solid white; border-bottom: 40px solid transparent;"> </div>
+
+			</div>
+
+		</div>
+
+			<div class="col-md-4" style=" padding:0px;">
+				<div class="row">
+
+					<div class="col-md-8" style=" margin-top:30px; height: 50px; width: 100%;background-color: white;" > <p style="color:#417aa7; margin-top:10px;">Sylet </p></div>
+
+					<div class="col-md-4" style=" margin-top:20px;width: 0; height: 0; border-top: 30px solid transparent; border-left: 50px solid white; border-bottom: 40px solid transparent;"> </div>
+
+			</div>
+				
+
+			</div> 
+
+			<div class="col-md-4" style=" padding:0px;">
+				<div class="row">
+
+					<div class="col-md-8" style=" margin-top:30px; height: 50px; width: 100%;background-color: white;" > <p style="color:#417aa7; margin-top:10px;">Replace</p></div>
+
+					<div class="col-md-4" style=" margin-top:20px;width: 0; height: 0; border-top: 30px solid transparent; border-left: 50px solid white; border-bottom: 40px solid transparent;"> </div>
+
+			</div>
+			</div> 
+	 </div> 
+   
+	
+		  <div class="row">
+			<div class="col-md-4" style="padding:0px;">
+				<div class="row">
+
+					<div class="col-md-1" style="  margin-left:30px; margin-top:40px; height: 40px; width: 60px;background-color:  #417aa7; border-radius: 50%; margin-right:7px;"><p style="color: white; text-align:center; font-size:22px;"><b>1</b></p> </div> 
+
+					<div class="col-md-7" style=" margin-top:30px; height: 50px; width: 100%;background-color: white;" > <p style="color:#417aa7; padding-top:10px;">1996 ,December 2019 </p></div>
+
+					<div class="col-md-3" style=" margin-top:20px;width: 0; height: 0; border-top: 30px solid transparent; border-left: 50px solid white; border-bottom: 40px solid transparent;"> </div>
+
+			</div>
+
+		</div>
+
+			<div class="col-md-4" style=" padding:0px;">
+				<div class="row">
+
+					<div class="col-md-8" style=" margin-top:30px; height: 50px; width: 100%;background-color: white;" > <p style="color:#417aa7; margin-top:10px;">Sylet </p></div>
+
+					<div class="col-md-4" style=" margin-top:20px;width: 0; height: 0; border-top: 30px solid transparent; border-left: 50px solid white; border-bottom: 40px solid transparent;"> </div>
+
+			</div>
+				
+
+			</div> 
+
+			<div class="col-md-4" style=" padding:0px;">
+				<div class="row">
+
+					<div class="col-md-8" style=" margin-top:30px; height: 50px; width: 100%;background-color: white;" > <p style="color:#417aa7; margin-top:10px;">Replace</p></div>
+
+					<div class="col-md-4" style=" margin-top:20px;width: 0; height: 0; border-top: 30px solid transparent; border-left: 50px solid white; border-bottom: 40px solid transparent;"> </div>
+
+			</div>
+			</div> 
+	 </div> 
+	 </div>
 </div>
-
-<div style="height:40px; width:100%; margin-bottom:50px;">
-  <p style="float:left;">Previous</p>
-  <p style="float:right;">Next</p>
 </div>
 
 

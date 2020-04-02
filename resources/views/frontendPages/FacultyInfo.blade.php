@@ -18,195 +18,151 @@
 @endsection
 @push('custom-css')
 	<style type="text/css">
-		body {
+	
+	*{
+    	padding: 0;
+    	margin: 0;
+    	outline:0;
+    }
 
-		margin: 5%;
-		margin-top: 5%;
-		margin-bottom: 0%;
-
-		}
-
-		#icon1 {
-
-		background-color: #68b2ff; 
-		border: 2px solid #ffffff;
-		color: white;
-		padding: 15px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px; 
+    body{
+            margin: 5%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+	.faculty_image{
+		height: 180px;
+		width: 180px;
 		border-radius: 50%;
-		}
+	}
+	.middle{
+		background-color: #66B3FF;
+		transform: translate(-90px, 5px) skew(-25deg, 0deg);
+		height: 200px;
+	}
+	.divider{
+	border-left: 5px solid #A9CFFF;
+    height: 150px;
+    position: relative;
+    left: -40px;
+    top: 50px;
+    margin-left: -3px;
+    transform: skew(-25deg, 10deg);
+    border-radius: 5px;
+	}
+	.content{
+	background-color: #A9CFFF;
+    transform: translate(-90px, 5px) skew(-25deg, 0deg);
+	}
+	.icon{
+		width: 20%;
+		position: relative;
+    	left: 0px;
+	}
+	.icon_content{
+	background-color: white;
+    margin-left: 25px;
+    margin-top: 25px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    padding: 7px;
+    border-radius: 50%;
+	}
+	.title {
+		position: relative;
+		width: 80%;
+		font-size: 20px;
+		position: relative;
+		color: #FFF;
+		background: #69B2FF;
+		height: 50px;
+		margin-top: 25px;
+		line-height: 50px;
+		font-size: 20px;
+		font-weight: bold;
+		padding-left: 5%;
+	}
+/* .title:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #FF0000;
+    transform-origin: bottom left;
+    -ms-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+} */
+.middle_content{
+    background-color: #66B3FF;
+    border: 0px;
+    border-radius: 0px;
+	color: white;
+    font-size: 20px;
+    font-weight: bold;
+	margin-left: 5%;
+}
 	</style>
 @endpush
 
 @section('page-content')
 	
-<h2><b>F.D.G</b></h2>
-
-
-<div style="height:60px; width:100%; background-color: #68b2ff; margin-top:20px;margin-bottom:20px;" > 
-
-	<form style=" text-align:right; float:right;">
-		<label for="gsearch"><b>Search</b> </label>
-		<input  style="font-size:25px; border-radius: 8px; margin-top:10px; margin-right:5px; border: 1px solid #4CAF50; background-color: #68b2ff; width:280px;" type="search" id="gsearch" name="gsearch">
-
-  </form>
-
-
-  <div  style="float:left; text-align:center; margin-top:15px;">
-	  <label style="padding-right:3px;"><b>Entries</b><select style="font-family: inherit; font-size: inherit; margin-left: 5px; width: 160px;background-color: blue; height: 30px;"> 
-		  <option value="10">10</option> 
-		  <option value="25">25</option> 
-		  <option value="50">50</option> 
-		  <option value="100">100</option> 
-	  </select>  
-	  </label> 
-  </div>
-</div>
-
-
-<div class="col-xs-12 col-sm-12 col-lg-12 table-responsive" style="padding-top:10px;">
-  <div id="faculty-table_wrapper" class="dataTables_wrapper no-footer">
-	  <div class="wrapper">
-	  <!--
-	  <div> table-striped table-bordered table-hover table-condensed table-responsive dataTable no-footer-->
-
-	  <table id="faculty-table" class="table table-striped table-bordered table-hover table-condensed dataTable no-footer" role="grid" aria-describedby="faculty-table_info" style="margin-bottom:100px; border-color:blue;"> 
-
-	  <thead style="background-color:#68b2ff; font-size:12px; width:100%;">
-		  <tr role="row"> 
-			  <th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Picture" style="text-align: center; height: 40px; font-size: 20px; color: white; background-color: #68b2ff; width: 33%; border-right-color:white;">Picture</th> 
-
-			  <th class="sorting" tabindex="0" aria-controls="faculty-table" rowspan="1" colspan="1" aria-label="Name &amp;amp; Designation: activate to sort column ascending" style=" width:100px; text-align: center; height: 40px; font-size: 20px; color: white; background-color: #68b2ff; width: 33%;">Name &amp; Designation</th> 
-
-
-			  <th class="sorting" tabindex="0" aria-controls="faculty-table" rowspan="1" colspan="1" aria-label="Contact(Phone &amp;amp; Email): activate to sort column ascending" style="width: 146px; text-align: center; height: 40px; font-size: 20px; color: white; background-color: #68b2ff; width:33%;">Contact<br/>(Phone &amp; Email)</th> 
-		  </tr>
-	  </thead>
-
-	  <tbody>
-
-		  <tr role="row" class="odd" style="background-color: white;">
-
-	  <td style="width:33%; border-bottom-color:white; border-left-color: #68b2ff; border-right-color:#68b2ff;"> 
-
-		  <img style="border:0px solid #CCC; border-radius: 50%; width:200px;" alt="Avatar" class="avatar" src="image/1.jpg"> 
-	  </td>
-
-	  <td style="width:33%; text-align:left; border-bottom-color:white; border-right-color:#68b2ff;"> 	<a href="javascript:void(0)" id="id_3" class="cvshow">
-			  <span style="font-size:12px;font-family: Arial;position:relative;left:-5px;">Dr. M ASLAM ALAM</span> 
-		  </a> 
-		  <br> 
-		  <span style="font-size:11px;font-family:Arial;">Rector (Senior Secretary to the Govt.)</span> 
-	  </td>
-
-
-	  <td style="width:33%; text-align:left; background-color: white; border-bottom-color:white; border-right-color:#68b2ff;"> 
-
-		  <div class="row text-center">
-			  <div class="col-md-8" style="height:50px;">
-
-				  <i class="fa fa-envelope-o" id="icon1" aria-hidden="true" style=" float:left; margin:0px;"></i>
-				  <p style=" margin:0px; font-size:20px;">dg_eti@yahoo.com</p> 
-			  </div>
-
-			  <div class="col-md-7" style="height:50px;">
-				  <i class="fa fa-phone" id="icon1" aria-hidden="true" style="float:left; margin:0px;"></i>
-				  <p style="float:right; margin:0px; font-size:20px;"> +88 02 8181 731 </p>
-			  </div>
-
-			  <div class="col-md-6" style="height:50px;">
-				  <i class="fa fa-file-text-o" id="icon1" aria-hidden="true" style="float:left; margin:0px;"></i>
-				  <p style="float:right; margin:0px; font-size:20px;"> 01127765654</p>
-			  </div>
-			  </div>
-	  </td>
-
-  </tr> 
-
-
-
-  <tr role="row" class="even" style= "background-color: white;">
-
-	  <td style="width:33%; text-align:left; vertical-align:middle; border-bottom-color: white; border-right-color:#68b2ff; border-left-color: #68b2ff;"> 
-		  <img style="border:0px solid #CCC; border-radius: 50%; width:200px;" alt="Avatar" class="avatar" src="image/3.jpg"> 
-	  </td>
-
-	  <td style="width:33%; text-align:left; vertical-align:middle; border-bottom-color:white; border-right-color:#68b2ff;"> 
-		  <a href="javascript:void(0)" id="id_3" class="cvshow"> 
-			  <span style="font-size:12px;font-family: Arial;position:relative;left:-5px;">A. S. Shameem Ahmed</span></a> 
-			  <br> 
-			  <span style="font-size:11px;font-family:Arial;">Member Directing Staff (R &amp; C)(Additional Secretary to the Govt.) 
-			  </span> 
-	  </td>
-
-
-	  <td style="width:33%; text-align:left; background-color: white; border-bottom-color:white; border-right-color:#68b2ff;"> 
-
-		  <div class="row text-center">
-			  <div class="col-md-8" style="height:50px;">
-
-				  <i class="fa fa-envelope-o" id="icon1" aria-hidden="true" style=" float:left; margin:0px;"></i>
-				  <p style=" margin:0px; font-size:20px;">dg_eti@yahoo.com</p> 
-			  </div>
-
-			  <div class="col-md-7" style="height:50px;">
-				  <i class="fa fa-phone" id="icon1" aria-hidden="true" style="float:left; margin:0px;"></i>
-				  <p style="float:right; margin:0px; font-size:20px;"> +88 02 8181 731 </p>
-			  </div>
-
-			  <div class="col-md-6" style="height:50px;">
-				  <i class="fa fa-file-text-o" id="icon1" aria-hidden="true" style="float:left; margin:0px;"></i>
-				  <p style="float:right; margin:0px; font-size:20px;"> 01127765654</p>
-			  </div>
-			  </div>
-	  </td>
-
-  </tr> 
-
-  <tr role="row" class="odd" style= "background-color: white; border: none;">
-	  <td style="width:33%; text-align:left; vertical-align:middle;  border-bottom-color:#68b2ff; border-right-color:#68b2ff; border-left-color: #68b2ff;"> 
-		  <img style="border:0px solid #CCC; border-radius: 50%; width:200px;" alt="Avatar" class="avatar" src="image/1.jpg"> 
-	  </td>
-
-	  <td style="width:33%; text-align:left; vertical-align:middle; border-bottom-color: #68b2ff; border-right-color:#68b2ff;"> 
-		  <a href="javascript:void(0)" id="id_3" class="cvshow"> 
-			  <span style="font-size:12px;font-family: Arial;position:relative;left:-5px;">A. S. Shameem Ahmed</span></a> 
-		  <br> 
-		  <span style="font-size:11px;font-family:Arial;">Member Directing Staff (R &amp; C)(Additional Secretary to the Govt.)</span> 
-	  </td>
-
-
-	   <td style="width:33%; text-align:left; background-color: white; border-bottom-color:#68b2ff; border-right-color:#68b2ff;"> 
-
-		  <div class="row text-center">
-			  <div class="col-md-8" style="height:50px;">
-
-				  <i class="fa fa-envelope-o" id="icon1" aria-hidden="true" style=" float:left; margin:0px;"></i>
-				  <p style=" margin:0px; font-size:20px;">dg_eti@yahoo.com</p> 
-			  </div>
-
-			  <div class="col-md-7" style="height:50px;">
-				  <i class="fa fa-phone" id="icon1" aria-hidden="true" style="float:left; margin:0px;"></i>
-				  <p style="float:right; margin:0px; font-size:20px;"> +88 02 8181 731 </p>
-			  </div>
-
-			  <div class="col-md-6" style="height:50px;">
-				  <i class="fa fa-file-text-o" id="icon1" aria-hidden="true" style="float:left; margin:0px;"></i>
-				  <p style="float:right; margin:0px; font-size:20px;"> 01127765654</p>
-			  </div>
-			  </div>
-	  </td>
-
-  </tr> 
-
-</tbody>
-
-  </table> 
-</div> 
-
-</div>
+<div class="row" style="margin-top: 10%;">
+	<div class="col-md-2" style="z-index: 1;">
+		<!-- <img class="faculty_image" src="image/Dg picture.jpg" alt="Dg Picture"> -->
+		<img class="faculty_image" src="{{asset('frontend/image/Dg picture.jpg')}}" alt="Avatar">
+	</div>
+	<div class="col-md-4 middle">
+		<div class="card card-body h-100 justify-content-center middle_content">
+			Designation: Director General<br>
+			Name: Md. Nuruzzaman Talukdar
+		 </div>
+	</div>
+	<div class="col-md-1 divider">
+		<!-- <div class="col-md-1" style="background-color: aqua;"></div> -->
+	</div>
+	<div class="col-md-5 content">
+		<div class="row">
+			<div class="icon">
+				<div class="icon_content">
+					<i class="fa fa-envelope fa-2x"></i>
+				</div>
+			</div>
+			<div class="title">
+				<div class="content_o">
+					<p>01285445555</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="icon">
+				<div class="icon_content">
+					<i class="fa fa-envelope fa-2x"></i>
+				</div>
+			</div>
+			<div class="title">
+				<div class="content_o">
+					<p>244647412646</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="icon">
+				<div class="icon_content">
+					<i class="fa fa-envelope fa-2x"></i>
+				</div>
+			</div>
+			<div class="title">
+				<div class="content_o">
+					<p>78884455411</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 @endsection
